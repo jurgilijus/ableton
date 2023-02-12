@@ -19,10 +19,16 @@ body {
   .mobile-menu-list {
     display: none;
   }
+  /* .moresub-conteiner {
+    display: block;
+  } */
   .menu-list,
   .auth {
     display: flex;
     right: -4rem;
+  }
+  .sub-menus {
+    gap: 1.5rem;
   }
 }
 
@@ -34,6 +40,9 @@ body {
 @media (min-width: 1400px) {
   .auth {
     right: -20rem;
+  }
+  .sub-menus {
+    gap: 3rem;
   }
 }
 @media (min-width: 1520px) {
