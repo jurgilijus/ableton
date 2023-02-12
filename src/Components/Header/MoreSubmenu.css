@@ -4,12 +4,40 @@
   height: 23rem;
   width: 100rem;
   margin-left: -39.5rem; */
-  width: 100rem;
-  padding: 3rem 1rem;
+
+  max-width: 100rem;
+  padding: 0rem 1.5rem 3rem 1.5rem;
   margin: auto;
   background-color: white;
 }
 h3 {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   line-height: 1.4;
+  padding-top: 2rem;
+}
+.sub-menus {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+  padding: 0.8rem 0rem;
+}
+.sub-menu {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-decoration: none;
+  color: black;
+}
+.weigth {
+  font-weight: bold;
+}
+.more-from-conteiner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  padding-top: 0.8rem;
+}
+.hide {
+  display: none;
 }
