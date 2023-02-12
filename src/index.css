@@ -1,13 +1,48 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+  /* border: 2px solid red; */
+}
+body {
+  background-color: #f3f3f3;
+}
+@media (min-width: 576px) {
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .mobile-menu-list {
+    display: none;
+  }
+  .menu-list,
+  .auth {
+    display: flex;
+    right: -4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .auth {
+    right: -14rem;
+  }
+}
+@media (min-width: 1400px) {
+  .auth {
+    right: -20rem;
+  }
+}
+@media (min-width: 1520px) {
+  .auth {
+    right: -28rem;
+  }
+}
+@media (min-width: 1600px) {
+  .auth {
+    right: -32rem;
+  }
 }
