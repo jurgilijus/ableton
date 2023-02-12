@@ -6,12 +6,11 @@ import Logo2 from "../../Assets/img/logo2.png";
 import { BsPlusLg } from "react-icons/bs";
 import { RiArrowDropDownFill, RiArrowUpSFill } from "react-icons/ri";
 import { FaMinus } from "react-icons/fa";
+import Hamburger from "./Hamburger";
 
 // CSS
 import "./Header.css";
-
-import Hamburger from "./Hamburger";
-import MoreSubmenu from "./MoreSubmenu";
+import "./MoreSubmenu.css";
 
 function Header() {
   const [arrow, setArrow] = useState(false);
@@ -26,81 +25,156 @@ function Header() {
   };
 
   return (
-    <header className={arrow ? "header-conteiner active" : "header-conteiner"}>
-      <div className="header-elements">
-        {arrow ? (
-          <img className="logo" src={Logo2} alt="Logo" />
-        ) : (
-          <img className="logo" src={Logo1} alt="Logo" />
-        )}
-        {/* Menu */}
-        <nav className="menu-list">
-          <a className="menu" href="/">
-            Live
-          </a>
-          <a className="menu" href="/">
-            Push
-          </a>
-          <a className="menu" href="/">
-            Note
-          </a>
-          <a className="menu" href="/">
-            Link
-          </a>
-          <a className="menu" href="/">
-            Shop
-          </a>
-          <a className="menu" href="/">
-            Packs
-          </a>
-          <a className="menu" href="/">
-            Help
-          </a>
-          <a className="menu" href="/">
-            More
-            <label onClick={openMoreSubmenu}>
-              {!moreSubmenu ? (
-                <BsPlusLg className="plus" />
+    <>
+      <header
+        className={arrow ? "header-conteiner active" : "header-conteiner"}
+      >
+        <div className="header-elements">
+          {arrow ? (
+            <img className="logo" src={Logo2} alt="Logo" />
+          ) : (
+            <img className="logo" src={Logo1} alt="Logo" />
+          )}
+          {/* Menu */}
+          <nav className="menu-list">
+            <a className="menu" href="/">
+              Live
+            </a>
+            <a className="menu" href="/">
+              Push
+            </a>
+            <a className="menu" href="/">
+              Note
+            </a>
+            <a className="menu" href="/">
+              Link
+            </a>
+            <a className="menu" href="/">
+              Shop
+            </a>
+            <a className="menu" href="/">
+              Packs
+            </a>
+            <a className="menu" href="/">
+              Help
+            </a>
+            <a className="menu" href="/">
+              More
+              <label onClick={openMoreSubmenu}>
+                {!moreSubmenu ? (
+                  <BsPlusLg className="plus" />
+                ) : (
+                  <FaMinus className="minus" />
+                )}
+              </label>
+            </a>
+          </nav>
+
+          {/* Mobile-menu */}
+          <nav className="mobile-menu-list">
+            <a
+              onClick={changeArrow}
+              className={arrow ? "menu active" : "menu"}
+              href="/"
+            >
+              Menu
+              {arrow ? (
+                <RiArrowUpSFill className="arrow-up active" />
               ) : (
-                <FaMinus className="minus" />
+                <RiArrowDropDownFill className="arrow " />
               )}
-            </label>
-          </a>
-        </nav>
+            </a>
+            <div
+              className={
+                arrow ? "mobile-submenu active" : "mobile-submenu inactive"
+              }
+            >
+              <Hamburger arrow={arrow} />
+            </div>
+          </nav>
 
-        {/* Mobile-menu */}
-        <nav className="mobile-menu-list">
-          <a
-            onClick={changeArrow}
-            className={arrow ? "menu active" : "menu"}
-            href="/"
-          >
-            Menu
-            {arrow ? (
-              <RiArrowUpSFill className="arrow-up active" />
-            ) : (
-              <RiArrowDropDownFill className="arrow " />
-            )}
-          </a>
-          <div
-            className={
-              arrow ? "mobile-submenu active" : "mobile-submenu inactive"
-            }
-          >
-            <Hamburger arrow={arrow} />
+          <div className="auth">
+            <a href="/" className="try">
+              Try Live for free
+            </a>
+            <a href="/" className="login">
+              Log in or register
+            </a>
           </div>
-        </nav>
-
-        <div className="auth">
-          <a href="/" className="try">
-            Try Live for free
+        </div>
+      </header>
+      <div
+        className={
+          !moreSubmenu ? "moresub-conteiner hide" : "moresub-conteiner"
+        }
+      >
+        <h3>More on Ableton.com:</h3>
+        <div className="sub-menus">
+          <a href="/" className="sub-menu">
+            Blog
           </a>
-          <a href="/" className="login">
-            Log in or register
+          <a href="/" className="sub-menu">
+            Ableton for the Classroom
+          </a>
+          <a href="/" className="sub-menu">
+            Ableton for Colleges and Universities
+          </a>
+          <a href="/" className="sub-menu">
+            Certified Training
+          </a>
+          <a href="/" className="sub-menu">
+            About Ableton
+          </a>
+          <a href="/" className="sub-menu">
+            Jobs
+          </a>
+          <a href="/" className="sub-menu">
+            Apprenticeships
           </a>
         </div>
+        <h3>More from Ableton:</h3>
+        <div className="more-from-conteiner">
+          <div>
+            <a href="/" className="sub-menu weigth">
+              Loop
+            </a>
+            <br />
+            <a href="/" className="sub-menu">
+              Watch Talks, Performances and Features from Ableton's Summit for
+              Music Makers
+            </a>
+          </div>
+          <div>
+            <a href="/" className="sub-menu weigth">
+              Learning Music
+            </a>
+            <br />
+            <a href="/" className="sub-menu">
+              Learn the fundamentals of music making right in your browser.
+            </a>
+          </div>
+          <div>
+            <a href="/" className="sub-menu weigth">
+              Learning Synths
+            </a>
+            <br />
+            <a href="/" className="sub-menu">
+              Get started with synthesis using a web-based synth and
+              accompanying lessons.
+            </a>
+          </div>
+          <div>
+            <a href="/" className="sub-menu weigth">
+              Making Music
+            </a>
+            <br />
+            <a href="/" className="sub-menu">
+              Some tips from 74 Creative Strategies for Electronic Producers.
+            </a>
+          </div>
+        </div>
       </div>
-    </header>
+    </>
   );
 }
 
