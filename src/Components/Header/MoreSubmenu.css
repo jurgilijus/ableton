@@ -1,11 +1,12 @@
 .moresub-conteiner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   top: 5rem;
-  right: 10rem;
-  background-color: red;
-  height: 21rem;
+  height: 23rem;
   width: 100rem;
+  margin-left: -39.5rem;
+  padding: 3rem 0rem;
+}
+h3 {
+  font-size: 1.875rem;
+  line-height: 1.4;
 }

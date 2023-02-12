@@ -65,6 +65,7 @@ function Header() {
                 <FaMinus className="minus" />
               )}
             </label>
+            <MoreSubmenu />
           </a>
         </nav>
 
@@ -100,7 +101,6 @@ function Header() {
           </a>
         </div>
       </div>
-      <MoreSubmenu />
     </header>
   );
 }
