@@ -1,7 +1,38 @@
 .Main-conteiner {
+  max-width: 100rem;
+  height: 100%;
+  background-color: white;
+  margin: auto;
+}
+.main1-photo {
+  background-image: url("../../Assets/img/HP_Spat_devices_2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 60%;
+  height: 40rem;
+}
+.main1-photo-text-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 3rem 4rem;
+}
+.main1-photo-text {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #ff8389;
+}
+.main1-photo-link {
+  color: #ff8389;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+.main1-photo-link::after {
+  content: ">";
+  padding-left: 0.5em;
+  text-decoration: none !important;
 }
