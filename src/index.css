@@ -9,10 +9,43 @@
 body {
   background-color: #f3f3f3;
 }
+@media (min-width: 384px) {
+  .main1-photo-text-content {
+    margin: 3rem 2rem;
+  }
+  .main1-photo-text {
+    font-size: 1.5rem;
+  }
+  .main1-photo-link {
+    font-size: 0.8rem;
+  }
+}
 @media (min-width: 576px) {
+  .main1-photo-text-content {
+    margin: 3rem 2rem;
+  }
+  .main1-photo-text {
+    font-size: 2rem;
+  }
+  .main1-photo-link {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
+  .main1-photo {
+    width: 60%;
+    height: 40rem;
+  }
+  .main1-photo-text-content {
+    margin: 3rem 2rem;
+  }
+  .main1-photo-text {
+    font-size: 2rem;
+  }
+  .main1-photo-link {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -30,11 +63,29 @@ body {
   .sub-menus {
     gap: 1.5rem;
   }
+  .main1-photo-text-content {
+    margin: 4rem 3rem;
+  }
+  .main1-photo-text {
+    font-size: 2.2rem;
+  }
+  .main1-photo-link {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .auth {
     right: -14rem;
+  }
+  .main1-photo-text-content {
+    margin: 5rem 4rem;
+  }
+  .main1-photo-text {
+    font-size: 2.5rem;
+  }
+  .main1-photo-link {
+    font-size: 1.4rem;
   }
 }
 @media (min-width: 1400px) {
@@ -43,6 +94,15 @@ body {
   }
   .sub-menus {
     gap: 3rem;
+  }
+  .main1-photo-text-content {
+    margin: 7rem 6rem;
+  }
+  .main1-photo-text {
+    font-size: 3rem;
+  }
+  .main1-photo-link {
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 1520px) {

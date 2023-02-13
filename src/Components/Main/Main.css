@@ -4,35 +4,83 @@
   background-color: white;
   margin: auto;
 }
-.main1-photo {
-  background-image: url("../../Assets/img/HP_Spat_devices_2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 60%;
-  height: 40rem;
+.main1-photo,
+.main2-photo,
+.main3-photo {
+  position: relative;
+  width: 100%;
 }
-.main1-photo-text-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-decoration: none;
-  padding: 3rem 4rem;
+.main2-photo {
+  top: 1.5rem;
+  float: right;
+  width: 90%;
+}
+.main3-photo {
+  width: 90%;
+}
+/* .main1-photo {
+  position: relative;
+  width: 60%;
+  height: 40rem;
+} */
+.image {
+  width: 100%;
+}
+.main1-photo-text-content,
+.main2-photo-text-content,
+.main3-photo-text-content {
+  position: absolute;
+  top: 0;
+  color: #ff8389;
+  font-weight: 900;
+  margin: 1.5rem 1rem 2rem 1.5rem;
+}
+.main2-photo-text-content {
+  margin: 1rem 1rem 1rem 1rem;
 }
 .main1-photo-text {
-  font-size: 2.5rem;
-  line-height: 1.2;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.main2-photo-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.main1-photo-link,
+.main2-photo-link {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  text-decoration: underline;
+}
+.main2-photo-link {
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+.main1-photo-link::after,
+.main2-photo-link::after {
+  content: ">";
+  display: inline-block;
+  padding-left: 0.5em;
+}
+/* .main1-photo-text-content {
+  position: absolute;
+  top: 0;
   color: #ff8389;
+  margin: 7rem 6rem;
+  font-weight: 900;
+}
+.main1-photo-text {
+  font-size: 3rem;
+  line-height: 1.2;
 }
 .main1-photo-link {
-  color: #ff8389;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   text-decoration: underline;
 }
+
 .main1-photo-link::after {
   content: ">";
+  display: inline-block;
   padding-left: 0.5em;
-  text-decoration: none !important;
-}
+} */
