@@ -37,10 +37,9 @@ function Main() {
           <img src={arrangement} alt="" className="image" />
           <div className="main3-photo-text-content">
             <h1 className="main3-photo-text">
-              Visualizing Sound: A Beginner's Guide to Using TouchDesigner with
-              Live
+              Circuit Breaking: Five Creative Tools for Arrangements
             </h1>
-            <p className="main3-photo-link">Find out more</p>
+            <p className="main3-photo-link">Eatch the video</p>
           </div>
         </a>
       </div>
