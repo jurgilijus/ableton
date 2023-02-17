@@ -5,13 +5,14 @@
   box-sizing: border-box;
   font-family: "Comfortaa", cursive;
   /* border: 2px solid red; */
+  /* background-color: brown; */
 }
 body {
   background-color: #f3f3f3;
 }
 @media (min-width: 384px) {
-  .main1-photo-text-content {
-    margin: 3rem 2rem;
+  .main1-photo {
+    height: 30%;
   }
   .main1-photo-text {
     font-size: 1.5rem;
@@ -19,8 +20,13 @@ body {
   .main1-photo-link {
     font-size: 0.8rem;
   }
+
+  .main2-photo {
+    top: 4%;
+    height: 25%;
+  }
   .main2-photo-text-content {
-    margin: 1.5rem 1rem 2rem 2rem;
+    margin: 1rem 1rem 2rem 2rem;
   }
   .main2-photo-text {
     font-size: 1.3rem;
@@ -30,8 +36,13 @@ body {
     font-size: 0.8rem;
     line-height: 1.5;
   }
+
+  .main3-photo {
+    top: 22%;
+    height: 25%;
+  }
   .main3-photo-text-content {
-    margin: 4rem 1rem 1rem 2rem;
+    margin: 1.5rem 1rem 1rem 2rem;
   }
   .main3-photo-text {
     font-size: 1.5rem;
@@ -41,16 +52,27 @@ body {
     font-size: 0.8rem;
     line-height: 1.8;
   }
+  .latest-conteiner {
+    top: 30%;
+  }
 }
 @media (min-width: 576px) {
+  .main1-photo {
+    height: 35%;
+  }
   .main1-photo-text-content {
-    margin: 3rem 2rem;
+    margin: 2rem 3rem;
   }
   .main1-photo-text {
     font-size: 2rem;
   }
   .main1-photo-link {
     font-size: 1rem;
+  }
+
+  .main2-photo {
+    top: 4%;
+    height: 35%;
   }
   .main2-photo-text-content {
     margin: 1.5rem 1rem 2rem 2rem;
@@ -63,8 +85,13 @@ body {
     font-size: 1rem;
     line-height: 1.5;
   }
+
+  .main3-photo {
+    top: 28%;
+    height: 35%;
+  }
   .main3-photo-text-content {
-    margin: 10rem 2rem 1rem 3rem;
+    margin: 1rem 2rem 1rem 3rem;
   }
   .main3-photo-text {
     font-size: 2rem;
@@ -74,31 +101,47 @@ body {
     font-size: 1rem;
     line-height: 1.8;
   }
+  .latest-conteiner {
+    top: 30%;
+  }
+  .latest-content-conteiner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .latest-title {
+    font-size: 1.875rem;
+    line-height: 1.4;
+  }
+  .latest-img {
+    height: 67%;
+  }
 }
 
 @media (min-width: 768px) {
   .main1-photo {
-    width: 60%;
-    height: 40rem;
+    width: 50%;
+    height: 30%;
   }
   .main1-photo-text-content {
-    margin: 3rem 2rem;
+    margin: 3rem 2.5rem;
   }
   .main1-photo-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .main1-photo-link {
     font-size: 1rem;
   }
   .main2-photo {
-    top: -29rem;
-    width: 32%;
+    width: 35%;
+    height: 20%;
+    top: -20%;
   }
   .main2-photo-text-content {
-    margin: 1.5rem 1rem 2rem 1.5rem;
+    margin: 1.5rem 1rem 2rem 2rem;
   }
   .main2-photo-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5;
   }
   .main2-photo-link {
@@ -106,12 +149,13 @@ body {
     line-height: 1.5;
   }
   .main3-photo {
-    margin-left: 35%;
-    top: -31rem;
+    top: -5%;
+    margin: auto;
     width: 40%;
+    height: 20%;
   }
   .main3-photo-text-content {
-    margin: 0.5rem 1rem 1rem 1.5rem;
+    margin: 1.5rem 1rem 1rem 2rem;
   }
   .main3-photo-text {
     font-size: 1.2rem;
@@ -121,15 +165,23 @@ body {
     font-size: 0.8rem;
     line-height: 1.8;
   }
+  .latest-link {
+    display: flex;
+  }
+  .link {
+    display: none;
+  }
+  .latest-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 992px) {
   .mobile-menu-list {
     display: none;
   }
-  /* .moresub-conteiner {
-    display: block;
-  } */
   .menu-list,
   .auth {
     display: flex;
@@ -138,26 +190,37 @@ body {
   .sub-menus {
     gap: 1.5rem;
   }
+  .main1-photo {
+    height: 40%;
+  }
   .main1-photo-text-content {
-    margin: 4rem 3rem;
+    margin: 3rem 3rem;
   }
   .main1-photo-text {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .main1-photo-link {
     font-size: 1.2rem;
   }
 
+  .main2-photo {
+    top: -25%;
+    height: 25%;
+  }
   .main2-photo-text-content {
-    margin: 1.5rem 1rem 2rem 1.5rem;
+    margin: 1.5rem 1rem 2rem 2rem;
   }
   .main2-photo-text {
     font-size: 1.25rem;
+    line-height: 1.8;
   }
   .main2-photo-link {
     font-size: 1.2rem;
   }
 
+  .main3-photo {
+    height: 35%;
+  }
   .main3-photo-text-content {
     margin: 2rem 1rem 1rem 2rem;
   }
@@ -167,14 +230,34 @@ body {
   .main3-photo-link {
     font-size: 1.2rem;
   }
+  .latest-conteiner {
+    position: absolute;
+    top: 85%;
+  }
+  .latest-content-conteiner {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+  .latest-link {
+    display: none;
+  }
+  .latest-nav {
+    color: blue;
+    gap: 1rem;
+    display: flex;
+  }
 }
 
 @media (min-width: 1200px) {
   .auth {
     right: -14rem;
   }
+  .main1-photo {
+    width: 60%;
+    height: 50%;
+  }
   .main1-photo-text-content {
-    margin: 5rem 4rem;
+    margin: 4rem 4rem;
   }
   .main1-photo-text {
     font-size: 2.5rem;
@@ -184,32 +267,34 @@ body {
   }
 
   .main2-photo {
-    top: -23rem;
-    width: 32%;
+    top: -30%;
+    height: 30%;
   }
   .main2-photo-text-content {
-    margin: 1.5rem 1rem 2rem 1.5rem;
+    margin: 2rem 1.5rem 2rem 3rem;
   }
   .main2-photo-text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .main2-photo-link {
     font-size: 1.2rem;
   }
 
   .main3-photo {
-    margin-left: 35%;
-    top: -26rem;
     width: 40%;
   }
   .main3-photo-text-content {
-    margin: 5rem 1rem 1rem 2rem;
+    margin: 2rem 1rem 1rem 3rem;
   }
   .main3-photo-text {
     font-size: 2.2rem;
   }
   .main3-photo-link {
     font-size: 1.4rem;
+  }
+  .latest-conteiner {
+    position: absolute;
+    top: 95%;
   }
 }
 @media (min-width: 1400px) {
@@ -220,7 +305,7 @@ body {
     gap: 3rem;
   }
   .main1-photo-text-content {
-    margin: 7rem 6rem;
+    margin: 4rem 6rem;
   }
   .main1-photo-text {
     font-size: 3rem;
@@ -230,7 +315,7 @@ body {
   }
 
   .main2-photo-text-content {
-    margin: 2rem 1rem 2rem 2.5rem;
+    margin: 2rem 2rem 2rem 3rem;
   }
   .main2-photo-text {
     font-size: 1.6rem;
@@ -239,8 +324,11 @@ body {
     font-size: 1.4rem;
   }
 
+  .main3-photo {
+    height: 40%;
+  }
   .main3-photo-text-content {
-    margin: 8rem 1rem 1rem 3rem;
+    margin: 2rem 1rem 1rem 3rem;
   }
   .main3-photo-text {
     font-size: 2.5rem;
@@ -257,16 +345,15 @@ body {
     margin: 2rem 1rem 2rem 3rem;
   }
   .main2-photo-text {
-    font-size: 1.8rem;
-    line-height: 1.8;
-  }
-  .main2-photo-link {
     font-size: 1.5rem;
     line-height: 1.8;
   }
-
+  .main2-photo-link {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
   .main3-photo-text-content {
-    margin: 10rem 1rem 1rem 3.5rem;
+    margin: 2.5rem 1rem 1rem 3.5rem;
   }
   .main3-photo-text {
     font-size: 2.6rem;
@@ -279,6 +366,7 @@ body {
   .auth {
     right: -32rem;
   }
+
   .main2-photo-text-content {
     margin: 2rem 1rem 2rem 3rem;
   }
@@ -292,7 +380,7 @@ body {
   }
 
   .main3-photo-text-content {
-    margin: 10rem 1rem 1rem 3.5rem;
+    margin: 3rem 1rem 1rem 3.5rem;
   }
   .main3-photo-text {
     font-size: 3rem;

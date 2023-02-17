@@ -1,7 +1,9 @@
 .burger-menu-list {
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 10;
 }
 .burger-menu {
   color: white;
