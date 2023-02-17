@@ -1,6 +1,6 @@
 import React from "react";
-import hp from "../../Assets/img/HP_Spat_devices_2.png";
 import { Latest } from "./Latest";
+import { More } from "./More";
 
 // CSS
 import "./Main.css";
@@ -38,6 +38,7 @@ function Main() {
           </div>
         </a>
         <Latest />
+        <More />
       </section>
     </>
   );

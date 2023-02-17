@@ -1,14 +1,14 @@
 .moresub-conteiner {
-  /* position: absolute;
-  top: 5rem;
-  height: 23rem;
-  width: 100rem;
-  margin-left: -39.5rem; */
-
+  display: flex;
+  justify-content: center;
+}
+.more {
+  position: absolute;
+  top: 4.9rem;
   max-width: 100rem;
   padding: 0rem 1.5rem 3rem 1.5rem;
-  margin: auto;
   background-color: white;
+  z-index: 10;
 }
 h3 {
   font-size: 1.5rem;
