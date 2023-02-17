@@ -18,6 +18,9 @@ function Header() {
     e.preventDefault();
     setArrow(!arrow);
   };
+  arrow
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "auto");
   const [moreSubmenu, setMoreSubmenu] = useState(false);
   const openMoreSubmenu = (e) => {
     e.preventDefault();

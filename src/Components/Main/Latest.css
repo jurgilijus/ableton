@@ -1,0 +1,67 @@
+.latest-conteiner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem 3rem;
+  max-width: 100rem;
+  position: relative;
+  background-color: white;
+  top: 30%;
+}
+.latest-title {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+.latest-nav {
+  display: none;
+}
+.latest-content {
+  margin-bottom: 1.5rem;
+}
+img {
+  width: 100%;
+}
+.latest-label {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding-top: 0rem;
+  margin: 0.5em 0em;
+  cursor: pointer;
+}
+.latest-label:checked {
+  height: 100rem;
+  font-size: 10rem;
+  cursor: pointer;
+}
+.artist {
+  color: #fed16f;
+}
+.latest-subtitle {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.latest-header {
+  display: flex;
+  align-items: center;
+}
+.link {
+  margin: auto;
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: blue;
+}
+.latest-link {
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin-top: 1.25rem;
+  display: none;
+}
+.link::after,
+.latest-link::after {
+  content: ">";
+  margin-left: 0.5em;
+}
