@@ -1,0 +1,8 @@
+.more-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 100rem;
+  height: 5rem;
+}

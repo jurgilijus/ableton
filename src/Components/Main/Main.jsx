@@ -1,5 +1,6 @@
 import React from "react";
 import { Latest } from "./Latest";
+import { More } from "./More";
 
 // CSS
 import "./Main.css";
@@ -37,6 +38,7 @@ function Main() {
           </div>
         </a>
         <Latest />
+        <More />
       </section>
     </>
   );

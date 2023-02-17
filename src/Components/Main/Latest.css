@@ -1,8 +1,7 @@
 .latest-conteiner {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: 2rem 3rem;
+  padding: 0rem 1.5rem;
   max-width: 100rem;
   position: relative;
   background-color: white;
@@ -40,6 +39,7 @@ img {
   color: #fed16f;
 }
 .latest-subtitle {
+  padding-top: 1rem;
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -54,14 +54,17 @@ img {
   margin-bottom: 1rem;
   color: blue;
 }
-.latest-link {
+.latest-link,
+.latest-discovermore-link {
   font-weight: 900;
   font-size: 0.9rem;
   margin-top: 1.25rem;
   display: none;
 }
+
 .link::after,
-.latest-link::after {
+.latest-link::after,
+.latest-discovermore-link::after {
   content: ">";
   margin-left: 0.5em;
 }
