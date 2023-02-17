@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
-* {
+*,
+*::after,
+*::before,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -52,9 +55,9 @@ body {
     font-size: 0.8rem;
     line-height: 1.8;
   }
-  .latest-conteiner {
+  /* .latest-conteiner {
     top: 30%;
-  }
+  } */
 }
 @media (min-width: 576px) {
   .main1-photo {
@@ -101,9 +104,9 @@ body {
     font-size: 1rem;
     line-height: 1.8;
   }
-  .latest-conteiner {
+  /* .latest-conteiner {
     top: 30%;
-  }
+  } */
   .latest-content-conteiner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -230,10 +233,10 @@ body {
   .main3-photo-link {
     font-size: 1.2rem;
   }
-  .latest-conteiner {
+  /* .latest-conteiner {
     position: absolute;
     top: 85%;
-  }
+  } */
   .latest-content-conteiner {
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;

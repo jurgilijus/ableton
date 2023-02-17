@@ -1,5 +1,4 @@
 import React from "react";
-import hp from "../../Assets/img/HP_Spat_devices_2.png";
 import { Latest } from "./Latest";
 
 // CSS

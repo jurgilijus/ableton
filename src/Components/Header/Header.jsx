@@ -111,69 +111,71 @@ function Header() {
           !moreSubmenu ? "moresub-conteiner hide" : "moresub-conteiner"
         }
       >
-        <h3>More on Ableton.com:</h3>
-        <div className="sub-menus">
-          <a href="/" className="sub-menu">
-            Blog
-          </a>
-          <a href="/" className="sub-menu">
-            Ableton for the Classroom
-          </a>
-          <a href="/" className="sub-menu">
-            Ableton for Colleges and Universities
-          </a>
-          <a href="/" className="sub-menu">
-            Certified Training
-          </a>
-          <a href="/" className="sub-menu">
-            About Ableton
-          </a>
-          <a href="/" className="sub-menu">
-            Jobs
-          </a>
-          <a href="/" className="sub-menu">
-            Apprenticeships
-          </a>
-        </div>
-        <h3>More from Ableton:</h3>
-        <div className="more-from-conteiner">
-          <div>
-            <a href="/" className="sub-menu weigth">
-              Loop
-            </a>
-            <br />
+        <div className="more">
+          <h3>More on Ableton.com:</h3>
+          <div className="sub-menus">
             <a href="/" className="sub-menu">
-              Watch Talks, Performances and Features from Ableton's Summit for
-              Music Makers
+              Blog
+            </a>
+            <a href="/" className="sub-menu">
+              Ableton for the Classroom
+            </a>
+            <a href="/" className="sub-menu">
+              Ableton for Colleges and Universities
+            </a>
+            <a href="/" className="sub-menu">
+              Certified Training
+            </a>
+            <a href="/" className="sub-menu">
+              About Ableton
+            </a>
+            <a href="/" className="sub-menu">
+              Jobs
+            </a>
+            <a href="/" className="sub-menu">
+              Apprenticeships
             </a>
           </div>
-          <div>
-            <a href="/" className="sub-menu weigth">
-              Learning Music
-            </a>
-            <br />
-            <a href="/" className="sub-menu">
-              Learn the fundamentals of music making right in your browser.
-            </a>
-          </div>
-          <div>
-            <a href="/" className="sub-menu weigth">
-              Learning Synths
-            </a>
-            <br />
-            <a href="/" className="sub-menu">
-              Get started with synthesis using a web-based synth and
-              accompanying lessons.
-            </a>
-          </div>
-          <div>
-            <a href="/" className="sub-menu weigth">
-              Making Music
-            </a>
-            <br />
-            <a href="/" className="sub-menu">
-              Some tips from 74 Creative Strategies for Electronic Producers.
-            </a>
+          <h3>More from Ableton:</h3>
+          <div className="more-from-conteiner">
+            <div>
+              <a href="/" className="sub-menu weigth">
+                Loop
+              </a>
+              <br />
+              <a href="/" className="sub-menu">
+                Watch Talks, Performances and Features from Ableton's Summit for
+                Music Makers
+              </a>
+            </div>
+            <div>
+              <a href="/" className="sub-menu weigth">
+                Learning Music
+              </a>
+              <br />
+              <a href="/" className="sub-menu">
+                Learn the fundamentals of music making right in your browser.
+              </a>
+            </div>
+            <div>
+              <a href="/" className="sub-menu weigth">
+                Learning Synths
+              </a>
+              <br />
+              <a href="/" className="sub-menu">
+                Get started with synthesis using a web-based synth and
+                accompanying lessons.
+              </a>
+            </div>
+            <div>
+              <a href="/" className="sub-menu weigth">
+                Making Music
+              </a>
+              <br />
+              <a href="/" className="sub-menu">
+                Some tips from 74 Creative Strategies for Electronic Producers.
+              </a>
+            </div>
           </div>
         </div>
       </div>
