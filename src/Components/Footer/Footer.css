@@ -1,9 +1,111 @@
 .footer-conteiner {
+  height: 100%;
+  max-width: 100rem;
+  margin: auto;
+  background-color: white;
+  padding: 1.5rem 1.25rem;
+}
+.footer-ableton {
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+.footer-header {
+  font-size: 0.9rem;
+  font-weight: 900;
+  padding: 0.5em 0em;
+}
+.footer-text {
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+input {
+  position: relative;
+  padding: 0.8em 0.8em;
+  width: 100%;
+  border: none;
+  background-color: #eeeeee;
+  font-size: 0.9rem;
+  color: #747373;
+  margin: 1em 0em;
+}
+.btn {
+  position: absolute;
+  padding: 0.75rem 1.5rem;
+  right: 1.2rem;
+  background-color: blue;
+  color: white;
+  font-weight: 900;
+  border: none;
+  margin: 1em 0em;
+}
+.footer-links,
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1em 0em;
+}
+.footer-link,
+.footer-contact {
+  color: black;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.footer-link::after {
+  content: ">";
+  margin-left: 0.5em;
+}
+.footer-link-logos-align {
+  margin-bottom: 0.25em;
+  display: flex;
+  gap: 1em;
+}
+.footer-socials {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20rem;
-  max-width: 100rem;
-  margin: auto;
-  background-color: red;
+
+  color: white;
+  padding: 0.3em 0.3em;
+}
+.facebook {
+  background-color: #3477f2;
+}
+.twitter {
+  background-color: #1da1f2;
+}
+.youtube {
+  background-color: #ff001d;
+}
+.instagram {
+  background-color: #f77737;
+}
+.footer-lang-loc-align {
+  display: flex;
+  flex-direction: column;
+}
+select {
+  padding: 0.8em 0.8em;
+  font-weight: 900;
+  font-size: 0.8rem;
+  background-color: #eeeeee;
+  border: none;
+}
+.lang {
+  width: 60%;
+}
+.country {
+  width: 90%;
+}
+.footer-logo {
+  width: 3rem;
+}
+.footer-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.9em;
+}
+span {
+  font-size: 0.7rem;
+  font-weight: 900;
 }

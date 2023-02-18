@@ -21,6 +21,7 @@
 }
 img {
   width: 100%;
+  height: auto;
 }
 .latest-label {
   font-size: 0.875rem;
