@@ -4,4 +4,6 @@
   align-items: center;
   height: 20rem;
   max-width: 100rem;
+  margin: auto;
+  background-color: red;
 }

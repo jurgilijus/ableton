@@ -5,33 +5,33 @@ import "./More.css";
 
 function More() {
   return (
-    <div className="more-conteiner">
+    <section className="more-align">
       <strong>More:</strong>
-      <a href="/" className="latest-nav">
+      <a href="/" className="more-nav">
         All posts
       </a>
-      <a href="/" className="latest-nav">
+      <a href="/" className="more-nav">
         Artist
       </a>
-      <a href="/" className="latest-nav">
+      <a href="/" className="more-nav">
         News
       </a>
-      <a href="/" className="latest-nav">
+      <a href="/" className="more-nav">
         Downloads
       </a>
-      <a href="/" className="latest-nav">
+      <a href="/" className="more-nav">
         Tutorials
       </a>
-      <a href="/" className="latest-nav">
+      <a href="/" className="more-nav">
         Videos
       </a>
-      <a href="/" className="latest-nav">
+      <a href="/" className="more-nav">
         Loop
       </a>
-      <a href="/" className="latest-nav">
+      <a href="/" className="more-nav">
         One Thing
       </a>
-    </div>
+    </section>
   );
 }
 

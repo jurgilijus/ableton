@@ -7,4 +7,4 @@ function Footer() {
   return <div className="footer-conteiner">Footer</div>;
 }
 
-export default Footer;
+export { Footer };

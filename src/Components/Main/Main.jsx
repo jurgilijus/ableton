@@ -37,9 +37,9 @@ function Main() {
             <p className="main3-photo-link">Eatch the video</p>
           </div>
         </a>
-        <Latest />
-        <More />
       </section>
+      <Latest />
+      <More />
     </>
   );
 }
