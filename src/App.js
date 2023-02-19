@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router-dom";
 import { Footer } from "./Components/Footer/Footer";
 // CSS
 import "./App.css";
-import { Latest } from "./Components/Main/Latest";
 
 function App() {
   return (

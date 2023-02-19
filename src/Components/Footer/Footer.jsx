@@ -89,7 +89,7 @@ function Footer() {
       </div>
       <div className="footer-lang-loc-align">
         <h3 className="footer-header">Language and Location</h3>
-        <label for="languages"></label>
+        {/* <label htmlfor="languages"></label> */}
         <select name="language" id="language" className="lang">
           <option value="en">English</option>
           <option value="de">Deutsch</option>
@@ -98,7 +98,7 @@ function Footer() {
           <option value="zh-cn">简体中文</option>
         </select>
 
-        <label for="country"></label>
+        {/* <label htmlFor="country"></label> */}
         <select name="language" id="language" className="country">
           <option value="en">English</option>
           <option value="de">Deutsch</option>
