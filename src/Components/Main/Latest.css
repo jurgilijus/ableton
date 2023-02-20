@@ -1,7 +1,7 @@
 .latest-conteiner {
   display: flex;
   flex-direction: column;
-  padding: 0rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   max-width: 100rem;
   margin: auto;
   background-color: white;

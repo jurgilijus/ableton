@@ -20,30 +20,34 @@
 }
 input {
   position: relative;
-  padding: 0.8em 0.8em;
+  padding: 0.8rem 0.8rem;
   width: 100%;
   border: none;
   background-color: #eeeeee;
   font-size: 0.9rem;
   color: #747373;
-  margin: 1em 0em;
+  margin: 1rem 0rem;
 }
 .btn {
   position: absolute;
-  padding: 0.75rem 1.5rem;
+  padding: 0.81rem 1.5rem;
   right: 1.2rem;
   background-color: blue;
   color: white;
   font-weight: 900;
   border: none;
-  margin: 1em 0em;
+  margin: 1rem 0rem;
+  cursor: pointer;
 }
 .footer-links,
 .footer-contacts {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  padding: 1em 0em;
+  margin: 2em 0em;
+}
+.footer-contacts {
+  margin: 2em 0em;
 }
 .footer-link,
 .footer-contact {
@@ -82,7 +86,8 @@ input {
 }
 .footer-lang-loc-align {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 0.2em;
 }
 select {
   padding: 0.8em 0.8em;
@@ -90,6 +95,7 @@ select {
   font-size: 0.8rem;
   background-color: #eeeeee;
   border: none;
+  cursor: pointer;
 }
 .lang {
   width: 60%;
@@ -104,6 +110,7 @@ select {
   display: flex;
   align-items: center;
   gap: 0.9em;
+  margin: 2em 0rem;
 }
 span {
   font-size: 0.7rem;
