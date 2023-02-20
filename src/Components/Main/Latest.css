@@ -1,11 +1,10 @@
 .latest-conteiner {
   display: flex;
   flex-direction: column;
-  padding: 0rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   max-width: 100rem;
-  position: relative;
+  margin: auto;
   background-color: white;
-  top: 30%;
 }
 .latest-title {
   font-size: 1rem;
@@ -22,6 +21,7 @@
 }
 img {
   width: 100%;
+  height: auto;
 }
 .latest-label {
   font-size: 0.875rem;
