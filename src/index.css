@@ -15,7 +15,7 @@ body {
 }
 @media (min-width: 384px) {
   .main1-photo {
-    height: 30%;
+    height: 15rem;
   }
   .main1-photo-text {
     font-size: 1.5rem;
@@ -25,8 +25,8 @@ body {
   }
 
   .main2-photo {
-    top: 4%;
-    height: 25%;
+    top: 2.5rem;
+    height: 15rem;
   }
   .main2-photo-text-content {
     margin: 1rem 1rem 2rem 2rem;
@@ -41,8 +41,8 @@ body {
   }
 
   .main3-photo {
-    top: 22%;
-    height: 25%;
+    top: 13rem;
+    height: 13rem;
   }
   .main3-photo-text-content {
     margin: 1.5rem 1rem 1rem 2rem;
@@ -58,10 +58,23 @@ body {
   .latest-conteiner {
     padding: 2rem 2rem;
   }
+
+  .footer-conteiner {
+    padding: 1.5rem 2rem;
+  }
+  .lang {
+    width: 8rem;
+  }
+  .country {
+    width: 15rem;
+  }
+  .btn {
+    right: 2rem;
+  }
 }
 @media (min-width: 576px) {
   .main1-photo {
-    height: 35%;
+    height: 18rem;
   }
   .main1-photo-text-content {
     margin: 2rem 3rem;
@@ -74,14 +87,15 @@ body {
   }
 
   .main2-photo {
-    top: 4%;
-    height: 35%;
+    top: 3rem;
+    width: 70%;
+    height: 15rem;
   }
   .main2-photo-text-content {
     margin: 1.5rem 1rem 2rem 2rem;
   }
   .main2-photo-text {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.5;
   }
   .main2-photo-link {
@@ -90,23 +104,24 @@ body {
   }
 
   .main3-photo {
-    top: 28%;
-    height: 35%;
+    width: 60%;
+    top: 16rem;
+    height: 15rem;
   }
   .main3-photo-text-content {
     margin: 1rem 2rem 1rem 3rem;
   }
   .main3-photo-text {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.8;
   }
   .main3-photo-link {
     font-size: 1rem;
     line-height: 1.8;
   }
-  /* .latest-conteiner {
-    top: 30%;
-  } */
+  .latest-conteiner {
+    padding-top: 10rem !important;
+  }
   .latest-content-conteiner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -127,12 +142,20 @@ body {
     gap: 0.5em;
     padding: 0;
   }
+  .footer-conteiner,
+  .latest-conteiner,
+  .more-align {
+    padding: 1.5rem 2.5rem;
+  }
+  .btn {
+    right: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
   .main1-photo {
     width: 50%;
-    height: 30%;
+    height: 16rem;
   }
   .main1-photo-text-content {
     margin: 3rem 2.5rem;
@@ -145,8 +168,8 @@ body {
   }
   .main2-photo {
     width: 35%;
-    height: 20%;
-    top: -20%;
+    height: 10rem;
+    top: -10rem;
   }
   .main2-photo-text-content {
     margin: 1.5rem 1rem 2rem 2rem;
@@ -160,10 +183,10 @@ body {
     line-height: 1.5;
   }
   .main3-photo {
-    top: -5%;
+    top: -1rem;
     margin: auto;
     width: 40%;
-    height: 20%;
+    height: 11rem;
   }
   .main3-photo-text-content {
     margin: 1.5rem 1rem 1rem 2rem;
@@ -197,6 +220,15 @@ body {
   strong {
     font-size: 1rem;
   }
+
+  .footer-conteiner,
+  .latest-conteiner,
+  .more-align {
+    padding: 3.5rem 3.5rem;
+  }
+  .btn {
+    right: 3.5rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -211,7 +243,7 @@ body {
     gap: 1.5rem;
   }
   .main1-photo {
-    height: 40%;
+    height: 20rem;
   }
   .main1-photo-text-content {
     margin: 3rem 3rem;
@@ -224,8 +256,8 @@ body {
   }
 
   .main2-photo {
-    top: -25%;
-    height: 25%;
+    top: -12rem;
+    height: 12rem;
   }
   .main2-photo-text-content {
     margin: 1.5rem 1rem 2rem 2rem;
@@ -239,7 +271,7 @@ body {
   }
 
   .main3-photo {
-    height: 35%;
+    height: 16rem;
   }
   .main3-photo-text-content {
     margin: 2rem 1rem 1rem 2rem;
@@ -262,12 +294,63 @@ body {
     gap: 1rem;
     display: flex;
   }
+  .footer-ableton {
+    width: 12rem;
+  }
+  .footer-aligne {
+    display: grid;
+    grid-template-columns: 100%/3 100%/3 100%/3;
+    grid-template-rows: auto;
+    grid-template-areas: "register education signup" "community distributors lang-loc" "contacts . footer";
+    gap: 5em;
+  }
+  .footer-signup {
+    grid-area: signup;
+  }
+  .footer-links {
+    margin-top: 1em;
+  }
+  .footer-register {
+    grid-area: register;
+    margin: 0;
+  }
+  .footer-education {
+    grid-area: education;
+    margin: 0;
+  }
+  .footer-community {
+    margin: 0;
+    grid-area: community;
+  }
+  .footer-distributors {
+    margin: 0;
+    grid-area: distributors;
+  }
+  .footer-lang-loc {
+    grid-area: lang-loc;
+  }
+  .footer-contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    grid-area: contacts;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .btn {
+    right: 3.5rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .main1-photo {
     width: 60%;
-    height: 50%;
+    height: 30rem;
   }
   .main1-photo-text-content {
     margin: 4rem 4rem;
@@ -280,8 +363,8 @@ body {
   }
 
   .main2-photo {
-    top: -30%;
-    height: 30%;
+    top: -14rem;
+    height: 15rem;
   }
   .main2-photo-text-content {
     margin: 2rem 1.5rem 2rem 3rem;
@@ -295,6 +378,7 @@ body {
 
   .main3-photo {
     width: 40%;
+    height: 20rem;
   }
   .main3-photo-text-content {
     margin: 2rem 1rem 1rem 3rem;
@@ -307,6 +391,11 @@ body {
   }
   strong {
     font-size: 1.25rem;
+  }
+  .footer-conteiner,
+  .latest-conteiner,
+  .more-align {
+    padding: 5rem 6rem;
   }
 }
 @media (min-width: 1400px) {
@@ -323,6 +412,10 @@ body {
     font-size: 1.8rem;
   }
 
+  .main2-photo {
+    top: -15rem;
+    height: 18rem;
+  }
   .main2-photo-text-content {
     margin: 2rem 2rem 2rem 3rem;
   }
@@ -334,7 +427,7 @@ body {
   }
 
   .main3-photo {
-    height: 40%;
+    height: 22rem;
   }
   .main3-photo-text-content {
     margin: 2rem 1rem 1rem 3rem;
@@ -369,6 +462,10 @@ body {
   }
 }
 @media (min-width: 1600px) {
+  .main2-photo {
+    top: -18rem;
+    height: 20rem;
+  }
   .main2-photo-text-content {
     margin: 2rem 1rem 2rem 3rem;
   }
@@ -381,6 +478,9 @@ body {
     line-height: 1.8;
   }
 
+  .main3-photo {
+    height: 25rem;
+  }
   .main3-photo-text-content {
     margin: 3rem 1rem 1rem 3.5rem;
   }
