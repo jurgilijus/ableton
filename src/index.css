@@ -68,9 +68,6 @@ body {
   .country {
     width: 15rem;
   }
-  .btn {
-    right: 2rem;
-  }
 }
 @media (min-width: 576px) {
   .main1-photo {
@@ -147,9 +144,6 @@ body {
   .more-align {
     padding: 1.5rem 2.5rem;
   }
-  .btn {
-    right: 2.5rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -225,9 +219,6 @@ body {
   .latest-conteiner,
   .more-align {
     padding: 3.5rem 3.5rem;
-  }
-  .btn {
-    right: 3.5rem;
   }
 }
 
@@ -341,9 +332,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  .btn {
-    right: 3.5rem;
   }
 }
 
@@ -492,5 +480,10 @@ body {
   }
   .latest-conteiner {
     padding: 2rem 5rem;
+  }
+  .btn {
+    position: relative;
+    top: -4.6rem;
+    right: -40rem;
   }
 }
