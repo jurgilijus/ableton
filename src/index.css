@@ -405,6 +405,9 @@ body {
   .more-align {
     padding: 5rem 6rem;
   }
+  .scroll-conteiner {
+    display: flex;
+  }
 }
 @media (min-width: 1400px) {
   .sub-menus {
