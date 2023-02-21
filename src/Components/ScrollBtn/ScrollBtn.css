@@ -1,0 +1,12 @@
+.scroll-conteiner {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 0rem;
+  height: 4.5rem;
+  width: 4rem;
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+}
