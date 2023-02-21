@@ -1,4 +1,5 @@
 import React from "react";
+import Videos from "./Videos";
 import shima from "../../Assets/img/thumb_Shima9.jpg.600x340_q85_crop_upscale.png";
 import arrangement from "../../Assets/img/arrangement_approaches_DSC1168.png";
 import loop from "../../Assets/img/thumb_Loop_Blog_Marina_Herlop15.jpg.600x340_q85_crop_upscale.png";
@@ -97,18 +98,7 @@ function Latest() {
         </a>
       </div>
       <div className="latest-content-conteiner">
-        <div className="latest-content">
-          <img src={shima} alt="" className="latest-img" />
-          <h2 className="latest-subtitle">Sketchbook project (Video)</h2>
-        </div>
-        <div className="latest-content">
-          <img src={arrangement} alt="" className="latest-img" />
-          <h2 className="latest-subtitle">Formant-shifting vocals (Video)</h2>
-        </div>
-        <div className="latest-content">
-          <img src={loop} alt="" className="latest-img" />
-          <h2 className="latest-subtitle">Sidechained variantions (Video)</h2>
-        </div>
+        <Videos />
       </div>
       <a href="/" className="link">
         See all videos
