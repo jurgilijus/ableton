@@ -1,19 +1,18 @@
 .btn-play {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -30%);
-  top: 28%;
-  color: blue;
+  color: white;
 }
 .btn-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  background-color: white;
-  height: 15%;
-  width: 12%;
-  border-radius: 50%;
   left: 50%;
+  top: 30%;
   transform: translate(-50%, -30%);
-  top: 32%;
+  height: 30%;
+  width: 21%;
+  background-color: blue;
+  border-radius: 20rem;
 }
 .pointer,
 .btn-play {
