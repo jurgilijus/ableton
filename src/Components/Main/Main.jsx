@@ -1,6 +1,7 @@
 import React from "react";
 import { Latest } from "./Latest";
 import { More } from "./More";
+import ScrollBtn from "../ScrollBtn/ScrollBtn";
 
 // CSS
 import "./Main.css";
@@ -37,6 +38,7 @@ function Main() {
             <p className="main3-photo-link">Eatch the video</p>
           </div>
         </a>
+        <ScrollBtn />
       </section>
       <Latest />
       <More />
