@@ -17,6 +17,7 @@
   display: none;
 }
 .latest-content {
+  position: relative;
   margin-bottom: 1.5rem;
 }
 img {
