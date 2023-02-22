@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // CSS
 import "./Hamburger.css";
@@ -8,24 +9,27 @@ function Hamburger({ arrow }) {
     <>
       {arrow === true ? (
         <nav className="burger-menu-list">
-          <a className="burger-menu" href="/">
+          <Link to="/live" className="burger-menu">
             Live
-          </a>
-          <a className="burger-menu" href="/">
+          </Link>
+          <Link to="/push" className="burger-menu">
             Push
-          </a>
-          <a className="burger-menu" href="/">
+          </Link>
+          <Link to="/note" className="burger-menu">
             Note
-          </a>
-          <a className="burger-menu" href="/">
+          </Link>
+          <Link to="link" className="burger-menu">
             Link
-          </a>
-          <a className="burger-menu" href="/">
+          </Link>
+          <Link to="/shop" className="burger-menu">
             Shop
-          </a>
-          <a className="burger-menu" href="/">
+          </Link>
+          <Link to="/packs" className="burger-menu">
+            Packs
+          </Link>
+          <Link to="/help" className="burger-menu">
             Help
-          </a>
+          </Link>
           <a className="burger-menu" href="/">
             Try Live for free
           </a>
