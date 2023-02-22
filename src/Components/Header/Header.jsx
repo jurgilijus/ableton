@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 import Logo1 from "../../Assets/img/logo1.png";
 import Logo2 from "../../Assets/img/logo2.png";
@@ -27,41 +28,48 @@ function Header() {
     setMoreSubmenu(!moreSubmenu);
   };
 
+  const [closeBurger, setCloseBurger] = useState(false);
+  const activeLink = () => setCloseBurger(!closeBurger);
+
   return (
     <>
       <header
-        className={arrow ? "header-conteiner active" : "header-conteiner"}
+        className={arrow ? "header-conteiner pushed" : "header-conteiner"}
       >
         <div className="header-elements">
           {arrow ? (
-            <img className="logo" src={Logo2} alt="Logo" />
+            <NavLink to="/">
+              <img className="logo" src={Logo2} alt="Logo" />
+            </NavLink>
           ) : (
-            <img className="logo" src={Logo1} alt="Logo" />
+            <NavLink to="/">
+              <img className="logo" src={Logo1} alt="Logo" />
+            </NavLink>
           )}
           {/* Menu */}
           <nav className="menu-list">
-            <a className="menu" href="/">
+            <NavLink to="/live" className="menu">
               Live
-            </a>
-            <a className="menu" href="/">
+            </NavLink>
+            <NavLink to="/push" className="menu">
               Push
-            </a>
-            <a className="menu" href="/">
+            </NavLink>
+            <NavLink to="/note" className="menu">
               Note
-            </a>
-            <a className="menu" href="/">
+            </NavLink>
+            <NavLink to="link" className="menu">
               Link
-            </a>
-            <a className="menu" href="/">
+            </NavLink>
+            <NavLink to="/shop" className="menu">
               Shop
-            </a>
-            <a className="menu" href="/">
+            </NavLink>
+            <NavLink to="/packs" className="menu">
               Packs
-            </a>
-            <a className="menu" href="/">
+            </NavLink>
+            <NavLink to="/help" className="menu">
               Help
-            </a>
-            <a className="menu" href="/">
+            </NavLink>
+            <p className="menu">
               More
               <label onClick={openMoreSubmenu}>
                 {!moreSubmenu ? (
@@ -70,28 +78,31 @@ function Header() {
                   <FaMinus className="minus" />
                 )}
               </label>
-            </a>
+            </p>
           </nav>
           {/* Mobile-menu */}
           <nav className="mobile-menu-list">
             <a
               onClick={changeArrow}
-              className={arrow ? "menu active" : "menu"}
+              className={arrow ? "menu pushed" : "menu"}
               href="/"
             >
               Menu
               {arrow ? (
-                <RiArrowUpSFill className="arrow-up active" />
+                <RiArrowUpSFill className="arrow-up pushed" />
               ) : (
                 <RiArrowDropDownFill className="arrow " />
               )}
             </a>
             <div
+              onClick={activeLink}
               className={
-                arrow ? "mobile-submenu active" : "mobile-submenu inactive"
+                arrow
+                  ? "mobile-submenu pushed"
+                  : "mobile-submenu inactive false"
               }
             >
-              <Hamburger arrow={arrow} />
+              <Hamburger arrow={arrow} activeLink={activeLink} />
             </div>
           </nav>
 
