@@ -1,0 +1,23 @@
+.live-conteiner {
+  position: relative;
+  top: 2px;
+  max-width: 100rem;
+  background-color: white;
+  height: 3.5rem;
+  overflow: auto;
+  white-space: nowrap;
+  margin: auto;
+}
+.live-width {
+}
+.live-link-aligne {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.active {
+  color: #ff765c;
+}
