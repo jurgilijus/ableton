@@ -19,10 +19,12 @@
 .latest-content {
   position: relative;
   margin-bottom: 1.5rem;
+  color: black;
 }
 img {
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 .latest-label {
   font-size: 0.875rem;
@@ -41,7 +43,7 @@ img {
 }
 .latest-subtitle {
   padding-top: 1rem;
-  font-size: 0.9rem;
+  font-size: 1.15rem;
   line-height: 1.5;
 }
 .latest-header {

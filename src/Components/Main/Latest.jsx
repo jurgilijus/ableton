@@ -1,8 +1,5 @@
 import React from "react";
 import Videos from "./Videos";
-import shima from "../../Assets/img/thumb_Shima9.jpg.600x340_q85_crop_upscale.png";
-import arrangement from "../../Assets/img/arrangement_approaches_DSC1168.png";
-import loop from "../../Assets/img/thumb_Loop_Blog_Marina_Herlop15.jpg.600x340_q85_crop_upscale.png";
 import screenshot from "../../Assets/img/Screenshot_2023-01-30_at_16.41.41.png";
 import abl from "../../Assets/img/ABL302_MorphFilter5.png";
 import bl from "../../Assets/img/BL_Modeselektor.png";
@@ -13,7 +10,13 @@ import hero from "../../Assets/img/blog_hero_image_800x400.jpg__3333.0x1667.0_q8
 // CSS
 import "./Latest.css";
 
-function Latest() {
+function Latest({ data }) {
+  const lastDays = new Date();
+  lastDays.setDate(lastDays.getDate() - 1);
+  const time = data.filter((d) => {
+    return new Date(d.uploade.seconds).getSeconds() >= lastDays.getSeconds();
+  });
+  console.log(time);
   return (
     <div className="latest-conteiner">
       <div className="latest-header">
@@ -33,27 +36,15 @@ function Latest() {
         </div>
       </div>
       <div className="latest-content-conteiner">
-        <div className="latest-content">
-          <img src={shima} alt="" className="latest-img" />
-          <h3 className="latest-label artist">Artists</h3>
-          <h2 className="latest-subtitle">
-            Shima: Full Autonomy Over Everything
-          </h2>
-        </div>
-        <div className="latest-content">
-          <img src={arrangement} alt="" className="latest-img" />
-          <h3 className="latest-label artist">Tutorials</h3>
-          <h2 className="latest-subtitle">
-            Circuit Breaking: Five Creative Tools for Arrangements
-          </h2>
-        </div>
-        <div className="latest-content">
-          <img src={loop} alt="" className="latest-img" />
-          <h3 className="latest-label artist">Artists</h3>
-          <h2 className="latest-subtitle">
-            Marina Herlop: Voice and Piano Extended To Infinity
-          </h2>
-        </div>
+        {time.map((data) => {
+          return (
+            <a href={data.url} key={data.id} className="latest-content">
+              <img src={data.img} alt="picture" className="latest-img" />
+              <h3 className="latest-label artist">{data.group}</h3>
+              <h2 className="latest-subtitle">{data.mainTitle}</h2>
+            </a>
+          );
+        })}
       </div>
       <a href="/" className="link">
         See all posts
