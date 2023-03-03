@@ -90,3 +90,7 @@ a {
   display: inline-block;
   padding-left: 0.5em;
 }
+.test-picture {
+  height: 50rem;
+  width: 50rem;
+}

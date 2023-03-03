@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Latest } from "./Latest";
 import { More } from "./More";
 import ScrollBtn from "../ScrollBtn/ScrollBtn";
 
 // CSS
 import "./Main.css";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../Firebase";
 
 function Main() {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const dataCollectionRef = collection(db, "articles");
+
+    const getData = async () => {
+      const data = await getDocs(dataCollectionRef);
+      setData(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    };
+    getData();
+  }, []);
+
   return (
     <>
       <section className="Main-conteiner">
         <a href="/" className="main1-photo">
-          {/* <img src={hp} alt="" className="image" /> */}
           <div className="main1-photo-text-content">
             <h1 className="main1-photo-text">
               SPAT Devices by Music Unit: Spatial Sound at the Cutting Edge
@@ -35,12 +47,12 @@ function Main() {
             <h1 className="main3-photo-text">
               Circuit Breaking: Five Creative Tools for Arrangements
             </h1>
-            <p className="main3-photo-link">Eatch the video</p>
+            <p className="main3-photo-link">Watch the video</p>
           </div>
         </a>
         <ScrollBtn />
       </section>
-      <Latest />
+      <Latest data={data} />
       <More />
     </>
   );
