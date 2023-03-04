@@ -29,7 +29,9 @@ function Header() {
   };
 
   const [closeBurger, setCloseBurger] = useState(false);
-  const activeLink = () => setCloseBurger(!closeBurger);
+  const activeLink = (activLink) => {
+    setCloseBurger(!closeBurger);
+  };
 
   return (
     <>
@@ -81,7 +83,7 @@ function Header() {
             </p>
           </nav>
           {/* Mobile-menu */}
-          <nav className="mobile-menu-list">
+          <nav className="mobile-menu-list" onClick={changeArrow}>
             <a
               onClick={changeArrow}
               className={arrow ? "menu pushed" : "menu"}
@@ -102,7 +104,10 @@ function Header() {
                   : "mobile-submenu inactive false"
               }
             >
-              <Hamburger arrow={arrow} activeLink={activeLink} />
+              <Hamburger
+                arrow={arrow}
+                activeLink={(e) => activeLink(e.target.value)}
+              />
             </div>
           </nav>
 
