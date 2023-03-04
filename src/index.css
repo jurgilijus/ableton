@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
-*,
-*::after,
-*::before,
-body {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Comfortaa", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Comfortaa", cursive; */
   /* border: 2px solid red; */
   /* background-color: brown; */
 }
@@ -18,10 +17,10 @@ body {
     height: 15rem;
   }
   .main1-photo-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .main1-photo-link {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .main2-photo {
@@ -32,11 +31,11 @@ body {
     margin: 1rem 1rem 2rem 2rem;
   }
   .main2-photo-text {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.5;
   }
   .main2-photo-link {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.5;
   }
 
@@ -48,11 +47,11 @@ body {
     margin: 1.5rem 1rem 1rem 2rem;
   }
   .main3-photo-text {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.8;
   }
   .main3-photo-link {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.8;
   }
   .latest-conteiner {
@@ -82,10 +81,10 @@ body {
     margin: 2rem 3rem;
   }
   .main1-photo-text {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .main1-photo-link {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .main2-photo {
@@ -97,11 +96,11 @@ body {
     margin: 1.5rem 1rem 2rem 2rem;
   }
   .main2-photo-text {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 1.5;
   }
   .main2-photo-link {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
   }
 
@@ -114,11 +113,11 @@ body {
     margin: 1rem 2rem 1rem 3rem;
   }
   .main3-photo-text {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 1.8;
   }
   .main3-photo-link {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.8;
   }
   .latest-conteiner {
@@ -130,7 +129,7 @@ body {
     gap: 2rem;
   }
   .latest-title {
-    font-size: 1.875rem;
+    font-size: 1.7rem;
     line-height: 1.4;
   }
   .latest-img {
@@ -165,10 +164,10 @@ body {
     margin: 3rem 2.5rem;
   }
   .main1-photo-text {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .main1-photo-link {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .main2-photo {
     width: 35%;
@@ -179,11 +178,11 @@ body {
     margin: 1.5rem 1rem 2rem 2rem;
   }
   .main2-photo-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
   }
   .main2-photo-link {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     line-height: 1.5;
   }
   .main3-photo {
@@ -196,11 +195,11 @@ body {
     margin: 1.5rem 1rem 1rem 2rem;
   }
   .main3-photo-text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.8;
   }
   .main3-photo-link {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.8;
   }
   .latest-link {
@@ -381,7 +380,7 @@ body {
     margin: 2rem 1.5rem 2rem 3rem;
   }
   .main2-photo-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .main2-photo-link {
     font-size: 1.2rem;
@@ -410,6 +409,9 @@ body {
   }
   .scroll-conteiner {
     display: flex;
+  }
+  .latest-nav-link {
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 1400px) {
@@ -462,11 +464,11 @@ body {
     margin: 2rem 1rem 2rem 3rem;
   }
   .main2-photo-text {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 1.8;
   }
   .main2-photo-link {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1.8;
   }
   .main3-photo-text-content {

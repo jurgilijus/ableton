@@ -5,7 +5,7 @@
   background-color: white;
 }
 .latest-title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 900;
   margin-bottom: 1.5rem;
@@ -13,6 +13,10 @@
 }
 .latest-nav {
   display: none;
+}
+.latest-nav-link {
+  font-size: 1.1rem;
+  font-weight: 900;
 }
 .latest-content {
   position: relative;
@@ -40,8 +44,9 @@ img {
   color: #fed16f;
 }
 .latest-subtitle {
-  padding-top: 1rem;
-  font-size: 1.15rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .latest-header {
@@ -49,17 +54,17 @@ img {
   align-items: center;
 }
 .link {
-  margin: auto;
   font-weight: 900;
   font-size: 0.9rem;
-  margin-bottom: 1rem;
   color: blue;
+  display: block;
+  text-align: center;
+  margin: 1rem 0rem;
 }
 .latest-link,
 .latest-discovermore-link {
   font-weight: 900;
   font-size: 0.9rem;
-  margin-top: 1.25rem;
   display: none;
 }
 
