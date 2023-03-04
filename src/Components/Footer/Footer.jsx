@@ -30,61 +30,100 @@ function Footer() {
 
         <div className="footer-register">
           <div className="footer-links">
-            <a href="/" className="footer-link">
+            <a
+              href="https://www.ableton.com/en/login/?next=/en/account/add_license/"
+              className="footer-link"
+            >
               Register Live or Push
             </a>
-            <a href="/" className="footer-link">
+            <a href="https://www.ableton.com/en/about/" className="footer-link">
               About Abelton
             </a>
-            <a href="/" className="footer-link">
+            <a href="https://www.ableton.com/en/jobs/" className="footer-link">
               Jobs
             </a>
           </div>
           <div className="footer-link-logos-align">
-            <a href="/" className="footer-socials facebook">
+            <a
+              href="https://www.facebook.com/ableton"
+              className="footer-socials facebook"
+            >
               <SiFacebook size={25} />
             </a>
-            <a href="/" className="footer-socials twitter">
+            <a
+              href="https://twitter.com/ableton"
+              className="footer-socials twitter"
+            >
               <FaTwitter size={25} />
             </a>
-            <a href="/" className="footer-socials youtube">
+            <a
+              href="https://www.youtube.com/ableton"
+              className="footer-socials youtube"
+            >
               <FaYoutube size={25} />
             </a>
-            <a href="/" className="footer-socials instagram">
+            <a
+              href="https://www.instagram.com/ableton/"
+              className="footer-socials instagram"
+            >
               <FaInstagram size={25} />
             </a>
           </div>
         </div>
         <div className="footer-links footer-education">
           <h3 className="footer-header">Education</h3>
-          <a href="/" className="footer-link">
+          <a
+            href="https://www.ableton.com/en/shop/education/"
+            className="footer-link"
+          >
             Offers for students and teachers
           </a>
-          <a href="/" className="footer-link">
+          <a
+            href="https://www.ableton.com/en/classroom/"
+            className="footer-link"
+          >
             Ableton for the Classroom
           </a>
-          <a href="/" className="footer-link">
+          <a
+            href="https://www.ableton.com/en/colleges-universities/"
+            className="footer-link"
+          >
             Ableton for Colleges and Universities
           </a>
         </div>
         <div className="footer-links footer-community">
           <h3 className="footer-header">Community</h3>
-          <a href="/" className="footer-link">
+          <a
+            href="https://www.ableton.com/en/community/user-groups/"
+            className="footer-link"
+          >
             Find Ableton User Groups
           </a>
-          <a href="/" className="footer-link">
+          <a
+            href="https://www.ableton.com/en/certified-training/#?item_type=all&country=country_lt"
+            className="footer-link"
+          >
             Find Certified Training
           </a>
-          <a href="/" className="footer-link">
+          <a
+            href="https://www.ableton.com/en/education/certification-program/"
+            className="footer-link"
+          >
             Become a Certified Trainer
           </a>
         </div>
         <div className="footer-links footer-distributors">
           <h3 className="footer-header">Distributors</h3>
-          <a href="/" className="footer-link">
+          <a
+            href="https://www.ableton.com/en/distributors/"
+            className="footer-link"
+          >
             Find Distributors
           </a>
-          <a href="/" className="footer-link">
+          <a
+            href="https://www.ableton.com/en/try-push-in-store/"
+            className="footer-link"
+          >
             Try Push in-store
           </a>
         </div>
@@ -113,22 +152,40 @@ function Footer() {
       </div>
       <div className="footer">
         <div className="footer-contacts">
-          <a href="/" className="footer-contact">
+          <a
+            href="https://www.ableton.com/en/contact-us/"
+            className="footer-contact"
+          >
             Contact Us
           </a>
-          <a href="/" className="footer-contact">
+          <a
+            href="https://www.ableton.com/en/press/"
+            className="footer-contact"
+          >
             Press Resources
           </a>
-          <a href="/" className="footer-contact">
+          <a
+            href="https://www.ableton.com/en/legal/"
+            className="footer-contact"
+          >
             Legal Info
           </a>
-          <a href="/" className="footer-contact">
+          <a
+            href="https://www.ableton.com/en/privacy/"
+            className="footer-contact"
+          >
             Privacy Policy
           </a>
-          <a href="/" className="footer-contact">
+          <a
+            href="https://www.ableton.com/en/cookie-settings/"
+            className="footer-contact"
+          >
             Cookie Settings
           </a>
-          <a href="/" className="footer-contact">
+          <a
+            href="https://www.ableton.com/en/imprint/"
+            className="footer-contact"
+          >
             Imprint
           </a>
         </div>

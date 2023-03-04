@@ -19,25 +19,46 @@ function Latest({ data }) {
         </a>
 
         <div className="latest-nav">
-          <a href="/" className="latest-nav-link">
+          <a
+            href="https://www.ableton.com/en/blog/"
+            className="latest-nav-link"
+          >
             All post
           </a>
-          <a href="/" className="latest-nav-link">
+          <a
+            href="https://www.ableton.com/en/blog/categories/artists/"
+            className="latest-nav-link"
+          >
             Artists
           </a>
-          <a href="/" className="latest-nav-link">
+          <a
+            href="https://www.ableton.com/en/blog/categories/news/"
+            className="latest-nav-link"
+          >
             News
           </a>
-          <a href="/" className="latest-nav-link">
+          <a
+            href="https://www.ableton.com/en/blog/categories/downloads/"
+            className="latest-nav-link"
+          >
             Downloads
           </a>
-          <a href="/" className="latest-nav-link">
+          <a
+            href="https://www.ableton.com/en/blog/categories/tutorials/"
+            className="latest-nav-link"
+          >
             Tutorials
           </a>
-          <a href="/" className="latest-nav-link">
+          <a
+            href="https://www.ableton.com/en/blog/categories/videos/"
+            className="latest-nav-link"
+          >
             Videos
           </a>
-          <a href="/" className="latest-nav-link">
+          <a
+            href="https://www.ableton.com/en/blog/loop/"
+            className="latest-nav-link"
+          >
             Loop
           </a>
         </div>
