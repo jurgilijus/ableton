@@ -8,13 +8,7 @@ function Latest({ data }) {
   const lastDays = new Date();
   lastDays.setDate(lastDays.getDate() - 1);
   const time = data.filter((d) => {
-    if (
-      new Date(d.uploade.seconds).getSeconds() >= lastDays.getSeconds() &&
-      d.group.length !== 0
-    ) {
-      return d;
-    }
-    return false;
+    return new Date(d.uploade.seconds).getSeconds() >= lastDays.getSeconds();
   });
   return (
     <div className="latest-conteiner">
@@ -25,32 +19,69 @@ function Latest({ data }) {
         </a>
 
         <div className="latest-nav">
-          <a href="/">All post</a>
-          <a href="/">Artists</a>
-          <a href="/">News</a>
-          <a href="/">Downloads</a>
-          <a href="/">Tutorials</a>
-          <a href="/">Videos</a>
-          <a href="/">Loop</a>
+          <a
+            href="https://www.ableton.com/en/blog/"
+            className="latest-nav-link"
+          >
+            All post
+          </a>
+          <a
+            href="https://www.ableton.com/en/blog/categories/artists/"
+            className="latest-nav-link"
+          >
+            Artists
+          </a>
+          <a
+            href="https://www.ableton.com/en/blog/categories/news/"
+            className="latest-nav-link"
+          >
+            News
+          </a>
+          <a
+            href="https://www.ableton.com/en/blog/categories/downloads/"
+            className="latest-nav-link"
+          >
+            Downloads
+          </a>
+          <a
+            href="https://www.ableton.com/en/blog/categories/tutorials/"
+            className="latest-nav-link"
+          >
+            Tutorials
+          </a>
+          <a
+            href="https://www.ableton.com/en/blog/categories/videos/"
+            className="latest-nav-link"
+          >
+            Videos
+          </a>
+          <a
+            href="https://www.ableton.com/en/blog/loop/"
+            className="latest-nav-link"
+          >
+            Loop
+          </a>
         </div>
       </div>
       <div className="latest-content-conteiner">
-        {time.map((data) => {
-          return (
-            <a href={data.url} key={data.id} className="latest-content">
-              <img src={data.img} alt="" className="latest-img" />
-              <h3 className="latest-label artist">{data.group}</h3>
-              <h2 className="latest-subtitle">{data.mainTitle}</h2>
-            </a>
-          );
-        })}
+        {time
+          .filter((index, d) => d < 3)
+          .map((data) => {
+            return (
+              <a href={data.url} key={data.id} className="latest-content">
+                <img src={data.img} alt="" className="latest-img" />
+                <h3 className="latest-label artist">{data.group}</h3>
+                <h2 className="latest-subtitle">{data.mainTitle}</h2>
+              </a>
+            );
+          })}
       </div>
       <a href="/" className="link">
         See all posts
       </a>
       <div className="latest-header">
         <h2 className="latest-title">In focus: techno</h2>
-        <a href="/" className="latest-discovermore-link">
+        <a href="/" className="latest-link">
           Discover more
         </a>
       </div>

@@ -24,12 +24,12 @@
 .menu {
   text-decoration: none;
   color: black;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 .menu-list {
   margin-left: 1rem;
-  gap: 1.5rem;
+  gap: 1rem;
   display: none;
 }
 .arrow {
@@ -82,6 +82,8 @@
   cursor: pointer;
 }
 .auth {
+  display: flex;
+  align-items: center;
   position: absolute;
   right: 2rem;
   display: none;
@@ -103,13 +105,4 @@
 .pushed {
   background-color: blue;
   color: white;
-}
-
-@media (max-width: 1280px) {
-  .try {
-    font-size: 1rem;
-  }
-  .menu {
-    font-size: 1rem;
-  }
 }

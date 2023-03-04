@@ -57,30 +57,30 @@ a {
   margin: 1.5rem 1rem 1rem 1.5rem;
 }
 .main1-photo-text {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   line-height: 1.8;
 }
 .main2-photo-text {
-  font-size: 1rem;
+  font-size: 1.15rem;
   line-height: 1.5;
 }
 .main3-photo-text {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.8;
 }
 .main1-photo-link,
 .main2-photo-link,
 .main3-photo-link {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.8;
   text-decoration: underline;
 }
 .main2-photo-link {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 1.5;
 }
 .main3-photo-link {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.8;
 }
 .main1-photo-link::after,
